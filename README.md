@@ -1,4 +1,4 @@
-<a href="javascript:;">Страница</a>
+<a href="https://brekot.github.io/2ta-gulp/">Страница</a>
 
 <hr>
 
