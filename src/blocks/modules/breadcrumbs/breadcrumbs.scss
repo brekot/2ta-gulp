@@ -1,0 +1,23 @@
+.breadcrumbs {
+    margin: 0 0 50px;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 14px;
+    }
+    &__link {
+        margin: 0 0 10px;
+    }
+    &__str {
+        fill: var(--color-text);
+        height: 16px;
+        width: 16px;
+        margin: 0 8px 10px;
+    }
+    &__current {
+        margin: 0 0 10px;
+        opacity: .6;
+    }
+}

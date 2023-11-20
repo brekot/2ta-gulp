@@ -1,0 +1,25 @@
+:root {
+    --color-bg: #FFFFFF;
+	--color-text: #3C3C43;
+	--color-one: #F5F5F7;
+	--color-two: #D8D8D9;
+	--color-contrast: #0B57D0;
+}
+
+.dark-theme {
+	--color-bg: #1F1F1F;
+	--color-text: #E3E3E3;
+	--color-one: #2D2F31;
+	--color-two: #444746;
+	--color-contrast: #A8C7FA;
+
+	& .header-theme__icon {
+
+		&_sun {
+			display: block;
+		}
+		&_moon {
+			display: none;
+		}
+	}	
+}

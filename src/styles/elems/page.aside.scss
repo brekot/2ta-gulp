@@ -1,0 +1,26 @@
+.page-aside {
+    display: flex;
+    margin: 0 0 100px;
+
+    &__aside {
+        width: 360px;
+        padding: 0 40px 0 0;
+        border-right: 1px solid var(--color-two);
+    }
+    &__title {
+        margin: 0;
+    }
+    &__desc {
+        font-weight: 500;
+    }
+    &__str {
+        margin: 32px 0;
+        width: 60px;
+        height: 1px;
+        background-color: var(--color-two);
+    }
+    &__page {
+        width: calc(100% - 360px);
+        padding: 0 0 0 100px;
+    }
+}

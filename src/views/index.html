@@ -5,14 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>2ta</title>
         <meta name="theme-color" content="#fff">
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
         <link rel="stylesheet" href="local/styles/main.css">
     </head>
     <body>
         @@include("../blocks/modules/header/header.html")
+        <main class="main-main">
+            @@include("../blocks/modules/breadcrumbs/breadcrumbs.html")
+            <div class="container">
+                <div class="page-aside">
+                    <div class="page-aside__aside">
+                        <!-- <h1 или <div class="h1 -->
+                        <h1 class="page-aside__title">Блог 2ta</h1>
+                        <div class="page-aside__desc">О маркетинге влияния</div>
+                        <div class="page-aside__str"></div>
+                        @@include("../blocks/modules/tags-list/tags-list.html")
+                    </div>
+                    <div class="page-aside__page">
+                        @@include("../blocks/modules/article-list/article-list.html")
+                    </div>
+                </div>
+            </div>
+        </main>
         @@include("../blocks/modules/footer/footer.html")
-        <script src="local/js/vendor.js"></script>
         <script src="local/js/main.js"></script>
     </body>
 </html>
