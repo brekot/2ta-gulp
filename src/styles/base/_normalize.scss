@@ -22,29 +22,46 @@ body {
 	background-color: var(--color-bg);
 }
 
-h2, h3, h5, h6,
-.h2, .h3, .h5, .h6 {
+h3, h5, h6,
+.h3, .h5, .h6 {
 	margin: 0 0 1.5rem;
 }
 
 h1, .h1 {
 	font-size: 48px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.25;
 	margin: 0 0 3rem;
 }
 
+h2, .h2 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 2rem 0 1rem;
+}
+
+@include media-breakpoint-down(sm)
+{
+	h1, .h1 {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+	h2, .h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
 p {
-	margin: 0 0 10pt;
+	margin: 0 0 1rem;
 }
 
-ol {
+ul, ol {
+	margin: 1rem 0;
     padding: 0 0 0 20px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }
 
 b,
