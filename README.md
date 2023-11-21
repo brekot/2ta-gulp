@@ -1,5 +1,5 @@
-<a href="https://brekot.github.io/2ta-gulp/articles.html">Список</a>
-<a href="https://brekot.github.io/2ta-gulp/section.html">Раздел</a>
+<a href="https://brekot.github.io/2ta-gulp/articles.html">Список</a><br>
+<a href="https://brekot.github.io/2ta-gulp/section.html">Раздел</a><br>
 
 <hr>
 
