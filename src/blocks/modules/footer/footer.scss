@@ -3,7 +3,31 @@
     height: 80px;
     font-size: 14px;
     display: flex;
-    align-items: center;  
+    align-items: center;
+
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            height: 60px;
+            text-align: center;
+        }
+    }
+}
+
+.menu-shadow {
+    position: fixed;
+    top: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-text);
+    opacity: .5;
+    z-index: 10;
+    display: none;
+
+    &_open {
+        display: block;
+    }
 }
 
 .to-up {
@@ -29,5 +53,26 @@
     &__icon {
         height: 16px;
         width: 16px;
+    }
+
+    @include media-breakpoint-between(md, lg)
+	{
+        & {
+            right: 32px;
+
+            &_show {
+                bottom: 32px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            right: 16px;
+
+            &_show {
+                bottom: 16px;
+            }
+        }
     }
 }

@@ -10,7 +10,6 @@
     }
     &__head {
         display: flex;
-        align-items: center;
         font-size: 14px;
         margin: 0 0 24px;
     }
@@ -25,8 +24,15 @@
             width: 24px;
         }
     }
+    &__words {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 0 0 8px;
+        line-height: 24px;
+    }
     &__name {
-        margin: 0 8px;
+        margin: 0 8px 0 0;
         font-weight: 600;
     }
     &__company {
@@ -63,9 +69,27 @@
     }
     &__img {
         transition: .5s;
+        width: 100%;
 
         &:hover {
             transform: scale(1.1);
+        }
+    }
+
+    @include media-breakpoint-down(sm)
+	{
+        &__item {
+            padding: 32px 0;
+        }
+        &__head {
+            margin: 0 0 16px;
+        }
+        &__text {
+            overflow: hidden;
+            -webkit-line-clamp: 5;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
         }
     }
 }

@@ -1,8 +1,3 @@
-//import { Fancybox } from "@fancyapps/ui";
-
-import "./import/modules";
-import "./import/components";
-
 document.addEventListener('click', (e) => {
 
     // Переключатель языка
@@ -22,6 +17,14 @@ document.addEventListener('click', (e) => {
     if (e.target.closest('.header-theme'))
     {
         document.body.classList.toggle('dark-theme');
+    }
+
+    // Раскрытие меню
+    if (e.target.closest('.header-main__mobile-btn') || e.target.closest('.menu-shadow'))
+    {
+        document.querySelector('.header-main__panel').classList.toggle('header-main__panel_open');
+
+        document.querySelector('.menu-shadow').classList.toggle('menu-shadow_open');
     }
 
     // Прокрутка наверх

@@ -8,7 +8,9 @@
         border-right: 1px solid var(--color-two);
     }
     &__title {
-        margin: 0;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1.25;
     }
     &__desc {
         font-weight: 500;
@@ -22,5 +24,44 @@
     &__page {
         width: calc(100% - 360px);
         padding: 0 0 0 100px;
+    }
+
+    @include media-breakpoint-between(lg, xl)
+	{
+        &__aside {
+            width: 340px;
+            padding: 0 20px 0 0;
+        }
+        &__page {
+            width: calc(100% - 340px);
+            padding: 0 0 0 40px;
+        }
+    }
+    @include media-breakpoint-down(md)
+	{
+        & {
+            margin: 0 0 32px;
+            flex-direction: column;
+
+            &__aside {
+                width: 100%;
+                padding: 0 0 22px;
+                border: none;
+            }
+            &__page {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        &__aside {
+            padding: 0 0 14px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 1.2;
+        }
     }
 }
