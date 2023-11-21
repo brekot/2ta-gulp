@@ -25,6 +25,8 @@ document.addEventListener('click', (e) => {
         document.querySelector('.header-main__panel').classList.toggle('header-main__panel_open');
 
         document.querySelector('.menu-shadow').classList.toggle('menu-shadow_open');
+
+        document.body.classList.toggle('overflow-hidden');
     }
 
     // Прокрутка наверх
