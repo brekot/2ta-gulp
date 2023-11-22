@@ -44,7 +44,7 @@ h2, .h2 {
 @include media-breakpoint-down(sm)
 {
 	h1, .h1 {
-		font-size: 40px;
+		font-size: 36px;
 		font-weight: 700;
 		line-height: 1.2;
 	}
@@ -173,4 +173,8 @@ picture {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.position-relative {
+	position: relative;
 }

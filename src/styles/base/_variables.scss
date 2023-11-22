@@ -6,6 +6,10 @@
 	--color-contrast: #0B57D0;
 }
 
+.shadow-window {
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+}
+
 .dark-theme {
 	--color-bg: #1F1F1F;
 	--color-text: #E3E3E3;
@@ -21,5 +25,13 @@
 		&_moon {
 			display: none;
 		}
-	}	
+	}
+	& .share-block-panel {
+		background-color: var(--color-one);
+
+		&__arrow,
+		&__links {
+			background-color: var(--color-one);
+		}
+	}
 }

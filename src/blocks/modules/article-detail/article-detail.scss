@@ -1,9 +1,15 @@
 .article-detail {
     font-size: 18px;
     line-height: 32px;
-    max-width: 740px;
-    margin: 0 auto 60px;
+    margin: 0 0 60px;
 
+    &__wrapper {
+        max-width: 740px;
+        margin: auto;
+    }
+    &__title {
+        padding: 0 70px 0 0;
+    }
     &__pict-full {
         max-width: 100vw;
         width: 100vw;
@@ -21,8 +27,11 @@
     @include media-breakpoint-down(md)
     {
         & {
-            margin: 0 auto 32px;
+            margin: 0 0 32px;
 
+            &__title {
+                padding: 0 55px 0 0;
+            }
             &__pict-full {
                 margin: 48px 0 0;
             }
@@ -41,6 +50,11 @@
         border-radius: 50%;
         overflow: hidden;
         margin: 0 12px 0 0;
+
+        &-icon {
+            height: 40px;
+            width: 40px;
+        }
     }
     &__words {
         display: flex;
