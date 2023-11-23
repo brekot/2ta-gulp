@@ -7,6 +7,10 @@
         padding: 0 40px 0 0;
         border-right: 1px solid var(--color-two);
     }
+    &__sticky {
+        position: sticky;
+        top: 100px;
+    }
     &__title {
         font-size: 48px;
         font-weight: 600;
